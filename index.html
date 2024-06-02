@@ -1,918 +1,978 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Normaliz -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>خمسات - لبيع وشراء الخدمات المصغرة</title>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <title>خمسات - لبيع وشراء الخدمات المصغرة</title>
-        <!-- Normaliz -->
-        <link rel="stylesheet" href="css/normalize.css">
-        <!-- Fontawesome -->
-        <link rel="stylesheet" href="css/all.min.css">
-        <!-- My Style -->
-        <link rel="stylesheet" href="css/style.css">
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;800&display=swap"
-            rel="stylesheet">
-    </head>
-
-    <body>
-        <!-- Start Header -->
-        <header>
-            <nav>
-
-                <ul>
-                    <li><a href="#">حساب جديد</a><i class="fa fa-user-plus" aria-hidden="true"></i></li>
-                    <li><a href="#">دخول</a><i class="fa fa-sign-in" aria-hidden="true"></i></li>
-                    <li class="padd"><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
-                    <li class="padd"><i class="fa fa-search" aria-hidden="true"></i></li>
-                </ul>
-                <ul>
-                    <li class="padd2"><a href="#">التصنيفات</a><i class="fa fa-cubes" aria-hidden="true"></i></li>
-                    <li><a href="#"><img src="images/logo.png" alt="logo"></a></li>
-                    <li onclick="toggleElement()" class="padd1"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
-                </ul>
-            </nav>
-            <!-- Start Aside -->
-            <aside id="aside">
-                <div><input type="search" placeholder="... ابحث عن"></div>
-                <div><a href="#">دخول</a><i class="fa fa-sign-in" aria-hidden="true"></i></div>
-                <div><a href="#">حساب جديد</a><i class="fa fa-user-plus" aria-hidden="true"></i></div>
-                <div><i class="fa-solid fa-angle-left"></i><a onclick="toggleElement2()" href="#">التصنيفات</a><i
-                        class="fa fa-cubes" aria-hidden="true"></i>
-                    <div id="aside2" class="types">
-                        <div><a href="#">اعمال</a></div>
-                        <div><a href="#">برمجة وتطوير</a></div>
-                        <div><a href="#">التسويق الالكتروني</a></div>
-                        <div><a href="#">التعليم عن بعد</a></div>
-                        <div><a href="#">تصميم فيديو انيميشن</a></div>
-                        <div><a href="#">تصميم</a></div>
-                        <div><a href="#">هندسة وعمارة</a></div>
-                        <div><a href="#">صوتيات</a></div>
-                        <div><a href="#">كتابة وترجمة</a></div>
-                        <div><a href="#">اسلوب حياة</a></div>
-                    </div>
-                </div>
-                <div><i class="fa-solid fa-angle-left"></i><a onclick="toggleElement3()" href="#">مجتمع خمسات</a><i
-                        class="fa fa-comments" aria-hidden="true"></i>
-                    <div id="aside3" class="types">
-                        <div><a href="#">نماذج قمت بتصميمها</a></div>
-                        <div><a href="#">طلبات الخدمات الغير موجودة</a></div>
-                        <div><a href="#">تجارب وقصص المستخدمين</a></div>
-                        <div><a href="#">امور عامه حول خمسات</a></div>
-                    </div>
-                </div>
-                <div><i class="fa-solid fa-angle-left"></i><a onclick="toggleElement4()" href="#">خمسات</a><i
-                        class="fa fa-file-text" aria-hidden="true"></i>
-                    <div id="aside4" class="types">
-                        <div><a href="#">حول خمسات</a></div>
-                        <div><a href="#">كيف يعمل الموقع</a></div>
-                        <div><a href="#">الاسئلة الشائعة</a></div>
-                        <div><a href="#">ضمان الحقوق</a></div>
-                        <div><a href="#">شروط الاستخدام</a></div>
-                        <div><a href="#">بيان الخصوصيه</a></div>
-                        <div><a href="#">المستويات</a></div>
-                        <div><a href="#">التسويق بالعمولة</a></div>
-                        <div><a href="#">مركز المساعدة</a></div>
-                    </div>
-                </div>
-                <div><i class="fa-solid fa-angle-left"></i><a onclick="toggleElement5()" href="#">تابعنا</a><i
-                        class="fa fa-hashtag" aria-hidden="true"></i>
-                    <div id="aside5" class="types">
-                        <div><a href="#">مجتمع خمسات</a></div>
-                        <div><a href="#">مدونة خمسات</a></div>
-                        <div><a href="#">تويتر</a></div>
-                        <div><a href="#">فيسبوك</a></div>
-                    </div>
-                </div>
-            </aside>
-            <!-- End Aside -->
-        </header>
-        <!-- End Header -->
-        <!-- Start Landing -->
-        <div class="container1">
-            <div class="landing">
-                <h1>اكبر سوق عربي لبيع وشراء الخدمات المصغرة</h1>
-                <h2>انجز اعمالك بسهولة وامان باسعار تبدا من 5$ فقط</h2>
-                <div class="search1">
-                    <button>بحث</button>
-                    <input type="search" placeholder="...جرب:تصميم شعار او ترجمة">
-                </div>
-            </div>
-            <div class="more">
-                <h5>معلومات اكثر</h5>
-            </div>
+  <body>
+    <!-- Start Header -->
+    <header>
+      <nav>
+        <ul>
+          <li class="login mobile">
+            <a href="#">حساب جديد <i class="fa fa-user-plus"></i></a>
+          </li>
+          <li class="login mobile">
+            <a href="#">دخول <i class="fa fa-sign-in"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-shopping-cart"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-search"></i></a>
+          </li>
+        </ul>
+        <ul>
+          <li class="mobile">
+            <a href="#">التصنيفات <i class="fa fa-cubes"></i></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/logo.png" alt="logo" /></a>
+          </li>
+          <li id="menu-bars">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Start Aside -->
+      <aside id="aside">
+        <div><input type="search" placeholder="... ابحث عن" /></div>
+        <div>
+          <a href="#">دخول <i class="fa fa-sign-in"></i></a>
         </div>
-        <!-- End Landing -->
-        <!-- Start Services -->
-        <div  class="services">
-            <h2>كافة الخدمات الابداعية والاحترافية لتطوير وتنميه اعمالك</h2>
-            <div class="serv-section" dir="rtl">
-                <div class="serv1 serv">
-                    <h3>اعمال</h3>
-                </div>
-                <div class="serv2 serv">
-                    <h3>برمجة وتطوير</h3>
-                </div>
-                <div class="serv3 serv">
-                    <h3>التسويق الالكتروني</h3>
-                </div>
-                <div class="serv4 serv">
-                    <h3>التعليم عن بعد</h3>
-                </div>
-                <div class="serv5 serv">
-                    <h3>تصميم فيديو وانيميشن</h3>
-                </div>
-                <div class="serv6 serv">
-                    <h3>تصميم</h3>
-                </div>
-                <div class="serv7 serv">
-                    <h3>صوتيات</h3>
-                </div>
-                <div class="serv8 serv">
-                    <h3>كتابه وترجمة</h3>
-                </div>
-            </div>
+        <div>
+          <a href="#">حساب جديد <i class="fa fa-user-plus"></i></a>
         </div>
-        <!-- End Services -->
-        <!-- Start Bussiness -->
-        <div class="container2">
-            <div class="action" dir="rtl">
-                <div>
-                    <h3>كيف يعمل موقع خمسات</h3>
-                </div>
-                <div class="nested-action">
-                    <div>
-                        <i class="fa-solid fa-handshake-simple-slash"></i>
-                        <h2>استعرض الخدمات</h2>
-                        <p>ابحث عن الخدمة التي تحتاجها باستخدام مربع البحث في الأعلى أو عبر التصنيفات.</p>
-                        <span>1</span>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-handshake-simple-slash"></i>
-                        <h2>اطلب الخدمة</h2>
-                        <p>راجع وصف الخدمة وتقييمات المشترين ثم اطلبها لفتح تواصل مع البائع.</p>
-                        <span>2</span>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-handshake-simple-slash"></i>
-                        <h2>استلم خدمتك</h2>
-                        <p>تواصل مع البائع مباشرة داخل موقع خمسات حتى استلام طلبك كاملاً.</p>
-                        <span>3</span>
-                    </div>
-                </div>
-            </div>
+        <div>
+          <a id="list1" href="#"
+            ><i class="fa-solid fa-angle-left icon"></i> التصنيفات
+            <i class="fa fa-cubes"></i
+          ></a>
+          <div id="aside2" class="types hidden">
+            <div><a href="#">اعمال</a></div>
+            <div><a href="#">برمجة وتطوير</a></div>
+            <div><a href="#">التسويق الالكتروني</a></div>
+            <div><a href="#">التعليم عن بعد</a></div>
+            <div><a href="#">تصميم فيديو انيميشن</a></div>
+            <div><a href="#">تصميم</a></div>
+            <div><a href="#">هندسة وعمارة</a></div>
+            <div><a href="#">صوتيات</a></div>
+            <div><a href="#">كتابة وترجمة</a></div>
+            <div><a href="#">اسلوب حياة</a></div>
+          </div>
         </div>
-<div class="bussiness-servs">
-    <div class="title" dir="rtl">
+        <div>
+          <a id="list2" href="#"
+            ><i class="fa-solid fa-angle-left icon2"></i> مجتمع خمسات
+            <i class="fa fa-comments"></i
+          ></a>
+          <div id="aside3" class="types hidden">
+            <div><a href="#">نماذج قمت بتصميمها</a></div>
+            <div><a href="#">طلبات الخدمات الغير موجودة</a></div>
+            <div><a href="#">تجارب وقصص المستخدمين</a></div>
+            <div><a href="#">امور عامه حول خمسات</a></div>
+          </div>
+        </div>
+        <div>
+          <a id="list3" href="#"
+            ><i class="fa-solid fa-angle-left icon3"></i> خمسات
+            <i class="fa fa-file-text"></i
+          ></a>
+          <div id="aside4" class="types hidden">
+            <div><a href="#">حول خمسات</a></div>
+            <div><a href="#">كيف يعمل الموقع</a></div>
+            <div><a href="#">الاسئلة الشائعة</a></div>
+            <div><a href="#">ضمان الحقوق</a></div>
+            <div><a href="#">شروط الاستخدام</a></div>
+            <div><a href="#">بيان الخصوصيه</a></div>
+            <div><a href="#">المستويات</a></div>
+            <div><a href="#">التسويق بالعمولة</a></div>
+            <div><a href="#">مركز المساعدة</a></div>
+          </div>
+        </div>
+        <div>
+          <a id="list4" href="#"
+            ><i class="fa-solid fa-angle-left icon4"></i>تابعنا
+            <i class="fa fa-hashtag" aria-hidden="true"></i
+          ></a>
+          <div id="aside5" class="types hidden">
+            <div><a href="#">مجتمع خمسات</a></div>
+            <div><a href="#">مدونة خمسات</a></div>
+            <div><a href="#">تويتر</a></div>
+            <div><a href="#">فيسبوك</a></div>
+          </div>
+        </div>
+      </aside>
+      <!-- End Aside -->
+    </header>
+    <!-- End Header -->
+    <!-- Start Landing -->
+    <div class="container1">
+      <div class="landing">
+        <h1>اكبر سوق عربي لبيع وشراء الخدمات المصغرة</h1>
+        <h2>انجز اعمالك بسهولة وامان باسعار تبدا من 5$ فقط</h2>
+        <div class="search1">
+          <button>بحث</button>
+          <input type="search" placeholder="...جرب:تصميم شعار او ترجمة" />
+        </div>
+      </div>
+      <div class="more">
+        <a href="#services"><h5>معلومات اكثر</h5></a>
+      </div>
+    </div>
+    <!-- End Landing -->
+    <!-- Start Services -->
+    <div class="services" id="services">
+      <h2>كافة الخدمات الابداعية والاحترافية لتطوير وتنميه اعمالك</h2>
+      <div class="serv-section" dir="rtl">
+        <div class="serv1 serv">
+          <h3>اعمال</h3>
+        </div>
+        <div class="serv2 serv">
+          <h3>برمجة وتطوير</h3>
+        </div>
+        <div class="serv3 serv">
+          <h3>التسويق الالكتروني</h3>
+        </div>
+        <div class="serv4 serv">
+          <h3>التعليم عن بعد</h3>
+        </div>
+        <div class="serv5 serv">
+          <h3>تصميم فيديو وانيميشن</h3>
+        </div>
+        <div class="serv6 serv">
+          <h3>تصميم</h3>
+        </div>
+        <div class="serv7 serv">
+          <h3>صوتيات</h3>
+        </div>
+        <div class="serv8 serv">
+          <h3>كتابه وترجمة</h3>
+        </div>
+      </div>
+    </div>
+    <!-- End Services -->
+    <!-- Start Bussiness -->
+    <div class="container2" dir="rtl">
+      <div>
+        <h3>كيف يعمل موقع خمسات</h3>
+      </div>
+      <div class="nested-action">
+        <div>
+          <i class="fa-solid fa-handshake-simple-slash"></i>
+          <h2>استعرض الخدمات</h2>
+          <p>
+            ابحث عن الخدمة التي تحتاجها باستخدام مربع البحث في الأعلى أو عبر
+            التصنيفات.
+          </p>
+          <span>1</span>
+        </div>
+        <div>
+          <i class="fa-solid fa-handshake-simple-slash"></i>
+          <h2>اطلب الخدمة</h2>
+          <p>
+            راجع وصف الخدمة وتقييمات المشترين ثم اطلبها لفتح تواصل مع البائع.
+          </p>
+          <span>2</span>
+        </div>
+        <div>
+          <i class="fa-solid fa-handshake-simple-slash"></i>
+          <h2>استلم خدمتك</h2>
+          <p>تواصل مع البائع مباشرة داخل موقع خمسات حتى استلام طلبك كاملاً.</p>
+          <span>3</span>
+        </div>
+      </div>
+    </div>
+    <div class="bussiness-servs">
+      <div class="title" dir="rtl">
         <h4>خدمات أعمال</h4>
         <button>عرض الجميع</button>
-    </div>
-    <div class="bussiness-one">
+      </div>
+      <div class="bussiness-one">
         <div>
-            <img src="images/serv1.png" alt="">
-            <h4>دراسة جدوى اقتصادية شاملة باللغة العربية</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(88)</span>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv1.png" alt="" />
+          <h4>دراسة جدوى اقتصادية شاملة باللغة العربية</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(88)</span>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
         <div>
-            <img src="images/serv2.jpg" alt="">
-            <h4>دراسة جدوى لمتجر أو تطبيق الكتروني <br><br></h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(17)</span>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv2.jpg" alt="" />
+          <h4>دراسة جدوى لمتجر أو تطبيق الكتروني <br /><br /></h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(17)</span>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
         <div>
-            <img src="images/serv3.png" alt="">
-            <h4>تصميم ومتابعة جدول زمنى للمشروع بإستخدام بريمافيرا Primavera</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(15)</span>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv3.png" alt="" />
+          <h4>تصميم ومتابعة جدول زمنى للمشروع بإستخدام بريمافيرا Primavera</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(15)</span>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
         <div>
-            <img src="images/serv4.jpg" alt="">
-            <h4>صياغة شروط وسياسات المواقع والتطبيقات الالكترونية</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(88)</span>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv4.jpg" alt="" />
+          <h4>صياغة شروط وسياسات المواقع والتطبيقات الالكترونية</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(88)</span>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
-    </div>
-    <div class="title" dir="rtl">
+      </div>
+      <div class="title" dir="rtl">
         <h4>خدمات بيانات</h4>
         <button>عرض الجميع</button>
-    </div>
-    <div class="bussiness-one">
+      </div>
+      <div class="bussiness-one">
         <div>
-            <img src="images/serv5.png" alt="">
-            <h4>دراسة جدوى اقتصادية شاملة باللغة العربية</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(88)</span>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv5.png" alt="" />
+          <h4>دراسة جدوى اقتصادية شاملة باللغة العربية</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(88)</span>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
         <div>
-            <img src="images/serv6.jpg" alt="">
-            <h4>دراسة جدوى لمتجر أو تطبيق الكتروني <br><br></h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(17)</span>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv6.jpg" alt="" />
+          <h4>دراسة جدوى لمتجر أو تطبيق الكتروني <br /><br /></h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(17)</span>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
         <div>
-            <img src="images/serv7.jpg" alt="">
-            <h4>تصميم ومتابعة جدول زمنى للمشروع بإستخدام بريمافيرا Primavera</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(15)</span>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv7.jpg" alt="" />
+          <h4>تصميم ومتابعة جدول زمنى للمشروع بإستخدام بريمافيرا Primavera</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(15)</span>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
         <div>
-            <img src="images/serv8.jpg" alt="">
-            <h4>صياغة شروط وسياسات المواقع والتطبيقات الالكترونية</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(88)</span>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv8.jpg" alt="" />
+          <h4>صياغة شروط وسياسات المواقع والتطبيقات الالكترونية</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(88)</span>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
-    </div>
-    <div class="title" dir="rtl">
+      </div>
+      <div class="title" dir="rtl">
         <h4>خدمات برمجة وتطوير</h4>
         <button>عرض الجميع</button>
-    </div>
-    <div class="bussiness-one">
+      </div>
+      <div class="bussiness-one">
         <div>
-            <img src="images/serv9.jpg" alt="">
-            <h4>دراسة جدوى اقتصادية شاملة باللغة العربية</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(88)</span>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv9.jpg" alt="" />
+          <h4>دراسة جدوى اقتصادية شاملة باللغة العربية</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(88)</span>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
         <div>
-            <img src="images/serv10.jpg" alt="">
-            <h4>دراسة جدوى لمتجر أو تطبيق الكتروني <br><br></h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(17)</span>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv10.jpg" alt="" />
+          <h4>دراسة جدوى لمتجر أو تطبيق الكتروني <br /><br /></h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(17)</span>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
         <div>
-            <img src="images/serv11.jpg" alt="">
-            <h4>تصميم ومتابعة جدول زمنى للمشروع بإستخدام بريمافيرا Primavera</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(15)</span>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv11.jpg" alt="" />
+          <h4>تصميم ومتابعة جدول زمنى للمشروع بإستخدام بريمافيرا Primavera</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(15)</span>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
         <div>
-            <img src="images/serv12.jpg" alt="">
-            <h4>صياغة شروط وسياسات المواقع والتطبيقات الالكترونية</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(88)</span>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv12.jpg" alt="" />
+          <h4>صياغة شروط وسياسات المواقع والتطبيقات الالكترونية</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(88)</span>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
-    </div>
-    <div class="title" dir="rtl">
+      </div>
+      <div class="title" dir="rtl">
         <h4>خدمات التسويق الإلكتروني</h4>
         <button>عرض الجميع</button>
-    </div>
-    <div class="bussiness-one">
+      </div>
+      <div class="bussiness-one">
         <div>
-            <img src="images/serv13.png" alt="">
-            <h4>دراسة جدوى اقتصادية شاملة باللغة العربية</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(88)</span>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv13.png" alt="" />
+          <h4>دراسة جدوى اقتصادية شاملة باللغة العربية</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(88)</span>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
         <div>
-            <img src="images/serv14.jpg" alt="">
-            <h4>دراسة جدوى لمتجر أو تطبيق الكتروني <br><br></h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(17)</span>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv14.jpg" alt="" />
+          <h4>دراسة جدوى لمتجر أو تطبيق الكتروني <br /><br /></h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(17)</span>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
         <div>
-            <img src="images/serv15.jpg" alt="">
-            <h4>تصميم ومتابعة جدول زمنى للمشروع بإستخدام بريمافيرا Primavera</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(15)</span>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv15.jpg" alt="" />
+          <h4>تصميم ومتابعة جدول زمنى للمشروع بإستخدام بريمافيرا Primavera</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(15)</span>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
         <div>
-            <img src="images/serv10.jpg" alt="">
-            <h4>صياغة شروط وسياسات المواقع والتطبيقات الالكترونية</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(88)</span>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv10.jpg" alt="" />
+          <h4>صياغة شروط وسياسات المواقع والتطبيقات الالكترونية</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(88)</span>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
-    </div>
-    <div class="title" dir="rtl">
+      </div>
+      <div class="title" dir="rtl">
         <h4>خدمات التسويق الإلكتروني</h4>
         <button>عرض الجميع</button>
-    </div>
-    <div class="bussiness-one">
+      </div>
+      <div class="bussiness-one">
         <div>
-            <img src="images/audio-93508fbd03c4ca1a20eabc10ecbf7924161d61e7139878bc93641c310d195e13.jpg" alt="">
-            <h4>دراسة جدوى اقتصادية شاملة باللغة العربية</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(88)</span>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img
+            src="images/audio-93508fbd03c4ca1a20eabc10ecbf7924161d61e7139878bc93641c310d195e13.jpg"
+            alt=""
+          />
+          <h4>دراسة جدوى اقتصادية شاملة باللغة العربية</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(88)</span>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
         <div>
-            <img src="images/bussiness-2c1f54b0bd848ce232a972323a799f3abe75235eb4f00fb0180d4ede6ac390dd.jpg" alt="">
-            <h4>دراسة جدوى لمتجر أو تطبيق الكتروني <br><br></h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(17)</span>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img
+            src="images/bussiness-2c1f54b0bd848ce232a972323a799f3abe75235eb4f00fb0180d4ede6ac390dd.jpg"
+            alt=""
+          />
+          <h4>دراسة جدوى لمتجر أو تطبيق الكتروني <br /><br /></h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(17)</span>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
         <div>
-            <img src="images/design-17881dc3ab0928311acc42761ff77c7e9a09e077c326fbc5d373e4fe1b5ad397.jpg" alt="">
-            <h4>تصميم ومتابعة جدول زمنى للمشروع بإستخدام بريمافيرا Primavera</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(15)</span>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img
+            src="images/design-17881dc3ab0928311acc42761ff77c7e9a09e077c326fbc5d373e4fe1b5ad397.jpg"
+            alt=""
+          />
+          <h4>تصميم ومتابعة جدول زمنى للمشروع بإستخدام بريمافيرا Primavera</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(15)</span>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
         <div>
-            <img src="images/development-bb416454cb6338d96f266211eb8d2e10fc669ddb8470ee95eef00c841df903e8.jpg" alt="">
-            <h4>صياغة شروط وسياسات المواقع والتطبيقات الالكترونية</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(88)</span>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img
+            src="images/development-bb416454cb6338d96f266211eb8d2e10fc669ddb8470ee95eef00c841df903e8.jpg"
+            alt=""
+          />
+          <h4>صياغة شروط وسياسات المواقع والتطبيقات الالكترونية</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(88)</span>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
-    </div>
-    <div class="title" dir="rtl">
+      </div>
+      <div class="title" dir="rtl">
         <h4>خدمات التسويق الإلكتروني</h4>
         <button>عرض الجميع</button>
-    </div>
-    <div class="bussiness-one">
+      </div>
+      <div class="bussiness-one">
         <div>
-            <img src="images/remote-64132428314c98f2e8abe5e4b98b3a03f215fdd04788b533f52171026fb30d70.jpg" alt="">
-            <h4>دراسة جدوى اقتصادية شاملة باللغة العربية</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(88)</span>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img
+            src="images/remote-64132428314c98f2e8abe5e4b98b3a03f215fdd04788b533f52171026fb30d70.jpg"
+            alt=""
+          />
+          <h4>دراسة جدوى اقتصادية شاملة باللغة العربية</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(88)</span>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
         <div>
-            <img src="images/social-5598c2401b6ca90eda3df7c69c8c4727dcc937f8cc995096456d8a8773f4d324.jpg" alt="">
-            <h4>دراسة جدوى لمتجر أو تطبيق الكتروني <br><br></h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(17)</span>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img
+            src="images/social-5598c2401b6ca90eda3df7c69c8c4727dcc937f8cc995096456d8a8773f4d324.jpg"
+            alt=""
+          />
+          <h4>دراسة جدوى لمتجر أو تطبيق الكتروني <br /><br /></h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(17)</span>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
         <div>
-            <img src="images/translate-ad-ad754e21fea72c69a11e1000903e1f848812bc20e3f1033d6e44f15c249dcd61.jpg" alt="">
-            <h4>تصميم ومتابعة جدول زمنى للمشروع بإستخدام بريمافيرا Primavera</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(15)</span>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img
+            src="images/translate-ad-ad754e21fea72c69a11e1000903e1f848812bc20e3f1033d6e44f15c249dcd61.jpg"
+            alt=""
+          />
+          <h4>تصميم ومتابعة جدول زمنى للمشروع بإستخدام بريمافيرا Primavera</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(15)</span>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
         <div>
-            <img src="images/video-9b7fb5a1ae97544b32573e1625c5b12bb86e5fff9abfe4ae5ba7371ea86c41ae.jpg" alt="">
-            <h4>صياغة شروط وسياسات المواقع والتطبيقات الالكترونية</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(88)</span>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img
+            src="images/video-9b7fb5a1ae97544b32573e1625c5b12bb86e5fff9abfe4ae5ba7371ea86c41ae.jpg"
+            alt=""
+          />
+          <h4>صياغة شروط وسياسات المواقع والتطبيقات الالكترونية</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(88)</span>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
-    </div>
-    <div class="title" dir="rtl">
+      </div>
+      <div class="title" dir="rtl">
         <h4>خدمات التسويق الإلكتروني</h4>
         <button>عرض الجميع</button>
-    </div>
-    <div class="bussiness-one">
+      </div>
+      <div class="bussiness-one">
         <div>
-            <img src="images/serv11.jpg" alt="">
-            <h4>دراسة جدوى اقتصادية شاملة باللغة العربية</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(88)</span>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv11.jpg" alt="" />
+          <h4>دراسة جدوى اقتصادية شاملة باللغة العربية</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(88)</span>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
         <div>
-            <img src="images/serv12.jpg" alt="">
-            <h4>دراسة جدوى لمتجر أو تطبيق الكتروني <br><br></h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(17)</span>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv12.jpg" alt="" />
+          <h4>دراسة جدوى لمتجر أو تطبيق الكتروني <br /><br /></h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(17)</span>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
         <div>
-            <img src="images/serv4.jpg" alt="">
-            <h4>تصميم ومتابعة جدول زمنى للمشروع بإستخدام بريمافيرا Primavera</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(15)</span>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv4.jpg" alt="" />
+          <h4>تصميم ومتابعة جدول زمنى للمشروع بإستخدام بريمافيرا Primavera</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(15)</span>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
         <div>
-            <img src="images/serv6.jpg" alt="">
-            <h4>صياغة شروط وسياسات المواقع والتطبيقات الالكترونية</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(88)</span>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv6.jpg" alt="" />
+          <h4>صياغة شروط وسياسات المواقع والتطبيقات الالكترونية</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(88)</span>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
-    </div>
-    <div class="title" dir="rtl">
+      </div>
+      <div class="title" dir="rtl">
         <h4>خدمات التسويق الإلكتروني</h4>
         <button>عرض الجميع</button>
-    </div>
-    <div class="bussiness-one">
+      </div>
+      <div class="bussiness-one">
         <div>
-            <img src="images/serv11.jpg" alt="">
-            <h4>دراسة جدوى اقتصادية شاملة باللغة العربية</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(88)</span>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv11.jpg" alt="" />
+          <h4>دراسة جدوى اقتصادية شاملة باللغة العربية</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(88)</span>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
         <div>
-            <img src="images/serv12.jpg" alt="">
-            <h4>دراسة جدوى لمتجر أو تطبيق الكتروني <br><br></h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(17)</span>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv12.jpg" alt="" />
+          <h4>دراسة جدوى لمتجر أو تطبيق الكتروني <br /><br /></h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(17)</span>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
         <div>
-            <img src="images/serv4.jpg" alt="">
-            <h4>تصميم ومتابعة جدول زمنى للمشروع بإستخدام بريمافيرا Primavera</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(15)</span>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv4.jpg" alt="" />
+          <h4>تصميم ومتابعة جدول زمنى للمشروع بإستخدام بريمافيرا Primavera</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(15)</span>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
         <div>
-            <img src="images/serv6.jpg" alt="">
-            <h4>صياغة شروط وسياسات المواقع والتطبيقات الالكترونية</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(88)</span>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv6.jpg" alt="" />
+          <h4>صياغة شروط وسياسات المواقع والتطبيقات الالكترونية</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(88)</span>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
-    </div>
-    <div class="title" dir="rtl">
+      </div>
+      <div class="title" dir="rtl">
         <h4>خدمات التسويق الإلكتروني</h4>
         <button>عرض الجميع</button>
-    </div>
-    <div class="bussiness-one">
+      </div>
+      <div class="bussiness-one">
         <div>
-            <img src="images/serv11.jpg" alt="">
-            <h4>دراسة جدوى اقتصادية شاملة باللغة العربية</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(88)</span>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv11.jpg" alt="" />
+          <h4>دراسة جدوى اقتصادية شاملة باللغة العربية</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(88)</span>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
         <div>
-            <img src="images/serv12.jpg" alt="">
-            <h4>دراسة جدوى لمتجر أو تطبيق الكتروني <br><br></h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(17)</span>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv12.jpg" alt="" />
+          <h4>دراسة جدوى لمتجر أو تطبيق الكتروني <br /><br /></h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(17)</span>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
         <div>
-            <img src="images/serv4.jpg" alt="">
-            <h4>تصميم ومتابعة جدول زمنى للمشروع بإستخدام بريمافيرا Primavera</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(15)</span>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv4.jpg" alt="" />
+          <h4>تصميم ومتابعة جدول زمنى للمشروع بإستخدام بريمافيرا Primavera</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(15)</span>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
         <div>
-            <img src="images/serv6.jpg" alt="">
-            <h4>صياغة شروط وسياسات المواقع والتطبيقات الالكترونية</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(88)</span>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv6.jpg" alt="" />
+          <h4>صياغة شروط وسياسات المواقع والتطبيقات الالكترونية</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(88)</span>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
-    </div>
-    <div class="title" dir="rtl">
+      </div>
+      <div class="title" dir="rtl">
         <h4>خدمات التسويق الإلكتروني</h4>
         <button>عرض الجميع</button>
-    </div>
-    <div class="bussiness-one">
+      </div>
+      <div class="bussiness-one">
         <div>
-            <img src="images/serv11.jpg" alt="">
-            <h4>دراسة جدوى اقتصادية شاملة باللغة العربية</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(88)</span>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv11.jpg" alt="" />
+          <h4>دراسة جدوى اقتصادية شاملة باللغة العربية</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(88)</span>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
         <div>
-            <img src="images/serv12.jpg" alt="">
-            <h4>دراسة جدوى لمتجر أو تطبيق الكتروني <br><br></h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(17)</span>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv12.jpg" alt="" />
+          <h4>دراسة جدوى لمتجر أو تطبيق الكتروني <br /><br /></h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(17)</span>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
         <div>
-            <img src="images/serv4.jpg" alt="">
-            <h4>تصميم ومتابعة جدول زمنى للمشروع بإستخدام بريمافيرا Primavera</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(15)</span>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv4.jpg" alt="" />
+          <h4>تصميم ومتابعة جدول زمنى للمشروع بإستخدام بريمافيرا Primavera</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(15)</span>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
         <div>
-            <img src="images/serv6.jpg" alt="">
-            <h4>صياغة شروط وسياسات المواقع والتطبيقات الالكترونية</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(88)</span>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+          <img src="images/serv6.jpg" alt="" />
+          <h4>صياغة شروط وسياسات المواقع والتطبيقات الالكترونية</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(88)</span>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
         </div>
-    </div>
-    <div class="title" dir="rtl">
+      </div>
+      <div class="title" dir="rtl">
         <h4>خدمات التسويق الإلكتروني</h4>
         <button>عرض الجميع</button>
+      </div>
+      <div class="bussiness-one">
+        <div>
+          <img src="images/serv11.jpg" alt="" />
+          <h4>دراسة جدوى اقتصادية شاملة باللغة العربية</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(88)</span>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
+        </div>
+        <div>
+          <img src="images/serv12.jpg" alt="" />
+          <h4>دراسة جدوى لمتجر أو تطبيق الكتروني <br /><br /></h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(17)</span>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
+        </div>
+        <div>
+          <img src="images/serv4.jpg" alt="" />
+          <h4>تصميم ومتابعة جدول زمنى للمشروع بإستخدام بريمافيرا Primavera</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(15)</span>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
+        </div>
+        <div>
+          <img src="images/serv6.jpg" alt="" />
+          <h4>صياغة شروط وسياسات المواقع والتطبيقات الالكترونية</h4>
+          <h5>أعمال / دراسة جدوى</h5>
+          <span>(88)</span>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h5><strong>$0.5</strong>تبدا من</h5>
+        </div>
+      </div>
     </div>
-    <div class="bussiness-one">
-        <div>
-            <img src="images/serv11.jpg" alt="">
-            <h4>دراسة جدوى اقتصادية شاملة باللغة العربية</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(88)</span>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
+    <!-- End Bussiness -->
+    <!-- Start last Section -->
+    <section>
+      <div class="asks">
+        <h3>الأسئلة الشائعة</h3>
+        <div class="qustions" dir="rtl">
+          <div>
+            <p>ما هو خمسات؟</p>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <hr />
+          <div>
+            <p>كيف يمكن أن أستفيد من خمسات؟</p>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <hr />
+          <div>
+            <p>كيف يضمن موقع خمسات حقوقي؟</p>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <hr />
+          <div>
+            <p>ماذا سيحدث بعد شرائي لأحد الخدمات المعروضة في خمسات؟</p>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <hr />
+          <div>
+            <p>ماذا لو لم أكن راضيا عن مستوى الخدمة المستلمة؟</p>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <hr />
         </div>
-        <div>
-            <img src="images/serv12.jpg" alt="">
-            <h4>دراسة جدوى لمتجر أو تطبيق الكتروني <br><br></h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(17)</span>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
-        </div>
-        <div>
-            <img src="images/serv4.jpg" alt="">
-            <h4>تصميم ومتابعة جدول زمنى للمشروع بإستخدام بريمافيرا Primavera</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(15)</span>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
-        </div>
-        <div>
-            <img src="images/serv6.jpg" alt="">
-            <h4>صياغة شروط وسياسات المواقع والتطبيقات الالكترونية</h4>
-            <h5>أعمال / دراسة جدوى</h5>
-            <span>(88)</span>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <h5><strong>$0.5</strong>تبدا من </h5>
-        </div>
+      </div>
+    </section>
+    <div class="safe">
+      <h2>أنجز أعمالك بسهولة وأمان</h2>
+      <button>سجل مجانا</button>
     </div>
-</div>
-        <!-- End Bussiness -->
-         <!-- Start last Section -->
-        <section>
-            <div class="asks">
-                <h3>الأسئلة الشائعة</h3>
-                <div class="qustions" dir="rtl">
-                    <div>
-                        <p>ما هو خمسات؟</p>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-                    <hr>
-                    <div>
-                        <p>كيف يمكن أن أستفيد من خمسات؟</p>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-                    <hr>
-                    <div>
-                        <p>كيف يضمن موقع خمسات حقوقي؟</p>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-                    <hr>
-                    <div>
-                        <p>ماذا سيحدث بعد شرائي لأحد الخدمات المعروضة في خمسات؟</p>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-                    <hr>
-                    <div>
-                        <p>ماذا لو لم أكن راضيا عن مستوى الخدمة المستلمة؟</p>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-                    <hr>
-                </div>
-            </div>
-        </section>
-        <div class="safe">
-            <h2>أنجز أعمالك بسهولة وأمان</h2>
-            <button>سجل مجانا</button>
+    <div class="social" dir="rtl">
+      <div>
+        <h3>موقع خمسات</h3>
+        <a href="#">حول خمسات</a>
+        <a href="#">كيف يعمل الموقع</a>
+        <a href="#">الأسئلة الشائعة</a>
+        <a href="#">ضمان الحقوق</a>
+        <a href="#">مركز المساعدة</a>
+      </div>
+      <div>
+        <h3>مدونة خمسات</h3>
+        <a href="#"
+          >تحليلات الأعمال: كيف تُسخِّر البيانات لتحقيق النجاح لأعمالك؟</a
+        >
+        <a href="#">7 خطوات لكتابة محتوى سوشيال ميديا مميز</a>
+        <a href="#"
+          >معالجة الاعتراضات البيعية: كيف تخلق فرصًا لزيادة مبيعاتك؟</a
+        >
+        <a href="#">21 مقال عن التجارة الإلكترونية ينبغي لك قراءتهم الآن</a>
+        <a href="#">دليل المبتدئين إلى صناعة المحتوى</a>
+      </div>
+      <div>
+        <h3>مجتمع خمسات</h3>
+        <a href="#">نماذج أعمال قمت بتنفيذها</a>
+        <a href="#">طلبات الخدمات غير الموجودة</a>
+        <a href="#">تجارب وقصص المستخدمين</a>
+        <a href="#">أمور عامة حول خمسات</a>
+      </div>
+      <div>
+        <h3>تابعنا</h3>
+        <div>
+          <i class="fa-brands fa-square-facebook" style="color: #144cac"></i>
+          <i class="fa-brands fa-twitter" style="color: #4280eb"></i>
         </div>
-        <div class="social" dir="rtl">
-            <div>
-                <h3>موقع خمسات</h3>
-                <a href="#">حول خمسات</a>
-                <a href="#">كيف يعمل الموقع</a>
-                <a href="#">الأسئلة الشائعة</a>
-                <a href="#">ضمان الحقوق</a>
-                <a href="#">مركز المساعدة</a>
-            </div>
-            <div>
-                <h3>مدونة خمسات</h3>
-                <a href="#">تحليلات الأعمال: كيف تُسخِّر البيانات لتحقيق النجاح لأعمالك؟</a>
-                <a href="#">7 خطوات لكتابة محتوى سوشيال ميديا مميز</a>
-                <a href="#">معالجة الاعتراضات البيعية: كيف تخلق فرصًا لزيادة مبيعاتك؟</a>
-                <a href="#">21 مقال عن التجارة الإلكترونية ينبغي لك قراءتهم الآن</a>
-                <a href="#">دليل المبتدئين إلى صناعة المحتوى</a>
-            </div>
-            <div>
-                <h3>مجتمع خمسات</h3>
-                <a href="#">نماذج أعمال قمت بتنفيذها</a>
-                <a href="#">طلبات الخدمات غير الموجودة</a>
-                <a href="#">تجارب وقصص المستخدمين</a>
-                <a href="#">أمور عامة حول خمسات</a>
-            </div>
-            <div>
-                <h3>تابعنا</h3>
-                <div>
-                    <i class="fa-brands fa-square-facebook" style="color: #144cac;"></i>
-                    <i class="fa-brands fa-twitter" style="color: #4280eb;"></i>
-                </div>
-                <h6>وسائل الدفع المتاحة</h6>
-                <div>
-                    <i class="fa-brands fa-cc-visa" style="color: #7c7e83;"></i>
-                    <i class="fa-brands fa-cc-mastercard" style="color: #7c7e83;"></i>
-                    <i class="fa-brands fa-cc-paypal" style="color: #7c7e83;"></i>
-                </div>
-            </div>
+        <h6>وسائل الدفع المتاحة</h6>
+        <div>
+          <i class="fa-brands fa-cc-visa" style="color: #7c7e83"></i>
+          <i class="fa-brands fa-cc-mastercard" style="color: #7c7e83"></i>
+          <i class="fa-brands fa-cc-paypal" style="color: #7c7e83"></i>
         </div>
-        <!-- End last Section -->
-        <!-- Start Footer -->
-        <footer>
-            <p>© 2023 Hsoub. All rights reserved.</p>
-            <ul>
-                <li><a href="#">شروط الاستخدام</a></li>
-                <li><a href="#">بيان الخصوصية</a></li>
-                <li><a href="#">المستويات</a></li>
-                <li><a href="#">التسويق بالعمولة</a></li>
-            </ul>
-        </footer>
-        <!-- End Footer -->
-        <!-- Start Caption -->
-        <div class="main">
-            <div class="logo">
-                <a href="#"><img src="images/hsoub-logo.svg" alt="hasoub"></a>
-            </div>
-            <div class="caption" dir="rtl">
-                <div>
-                    <a href="#">
-                        <h6>أنا</h6>
-                        <p>أداة واحدة لإدارة مشاريعك وفريقك</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                    <h6>مستقل</h6>
-                    <p>أكبر منصة عمل حر في العالم العربي</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                    <h6>خمسات</h6>
-                    <p>سوق بيع وشراء الخدمات المصغرة</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                    <h6>بيكاليكا</h6>
-                    <p>متجر القوالب والمنتجات الرقمية</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                    <h6>بعيد</h6>
-                    <p>موقع توظيف الخبراء عن بعد</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                    <h6>زيتون</h6>
-                    <p>برنامج خدمة العملاء الأكثر بساطة</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                    <h6>أكاديمية حسوب</h6>
-                    <p>دورات احترافية لتطوير مستقبلك</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                    <h6>موسوعة حسوب</h6>
-                    <p>المرجع الشامل للمطورين العرب</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                    <h6>حسوب I/O</h6>
-                    <p>مجتمع للنقاش الهادف والموضوعي</p>
-                    </a>
-                </div>
-            </div>
+      </div>
+    </div>
+    <!-- End last Section -->
+    <!-- Start Footer -->
+    <footer>
+      <p>© 2023 Hsoub. All rights reserved.</p>
+      <ul>
+        <li><a href="#">شروط الاستخدام</a></li>
+        <li><a href="#">بيان الخصوصية</a></li>
+        <li><a href="#">المستويات</a></li>
+        <li><a href="#">التسويق بالعمولة</a></li>
+      </ul>
+    </footer>
+    <!-- End Footer -->
+    <!-- Start Caption -->
+    <div class="main">
+      <div class="logo">
+        <a href="#"><img src="images/hsoub-logo.svg" alt="hasoub" /></a>
+      </div>
+      <div class="caption" dir="rtl">
+        <div>
+          <a href="#">
+            <h6>أنا</h6>
+            <p>أداة واحدة لإدارة مشاريعك وفريقك</p>
+          </a>
         </div>
-        <!-- End Caption -->
-        <script src="js/main.js"></script>
-    </body>
-
+        <div>
+          <a href="#">
+            <h6>مستقل</h6>
+            <p>أكبر منصة عمل حر في العالم العربي</p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <h6>خمسات</h6>
+            <p>سوق بيع وشراء الخدمات المصغرة</p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <h6>بيكاليكا</h6>
+            <p>متجر القوالب والمنتجات الرقمية</p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <h6>بعيد</h6>
+            <p>موقع توظيف الخبراء عن بعد</p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <h6>زيتون</h6>
+            <p>برنامج خدمة العملاء الأكثر بساطة</p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <h6>أكاديمية حسوب</h6>
+            <p>دورات احترافية لتطوير مستقبلك</p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <h6>موسوعة حسوب</h6>
+            <p>المرجع الشامل للمطورين العرب</p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <h6>حسوب I/O</h6>
+            <p>مجتمع للنقاش الهادف والموضوعي</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- End Caption -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
